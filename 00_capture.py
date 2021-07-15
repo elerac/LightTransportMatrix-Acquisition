@@ -19,14 +19,16 @@ class ProjectorCamera:
 
     def read(self, img_projection):
         self.projector.imshow(img_projection)
+        
         key = cv2.waitKey(self.DELAY)
+        
+        ret, img_captured = self.camera.read()
+        img_captured = cv2.absdiff(img_captured, self.BACKGROUND)
 
-        if key == -1:
-            ret, img_captured = self.camera.read()
-            img_captured = cv2.absdiff(img_captured, self.BACKGROUND)
-            return ret, img_captured
-        else:
+        if key != -1:
             return False, None
+        else:
+            return ret, img_captured
 
 
 def main():
@@ -68,7 +70,7 @@ def main():
 
     # Output directory
     DIRNAME = f"lighttransport_{n}x{m}x{3}_{q}x{p}"
-    os.makedirs(DIRNAME, exist_ok=True)
+    os.makedirs(DIRNAME)
     print(f"Write images to {DIRNAME}")
 
     # Generate projection patterns
