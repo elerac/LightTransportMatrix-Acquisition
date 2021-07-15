@@ -50,14 +50,14 @@ You can [download the measured data from here](https://drive.google.com/drive/fo
 - NumPy
 - OpenCV
 - scikit-image
-- [structuredlight](https://github.com/elerac/structuredlight)
+- structuredlight (https://github.com/elerac/structuredlight)
 
 #### Programs
 - `01_calculate_light_transport.py`: Calculate the light transport matrix from measured data.
 - `02_relighting.py`: Relighting with the light transport matrix.
 
 ## References
-- [Light transport matrices (Computational Photography, CMU)](http://graphics.cs.cmu.edu/courses/15-463/lectures/lecture25.pdf)
+- [Light transport matrices (Computational Photography, CMU)](http://graphics.cs.cmu.edu/courses/15-463/2020_fall/lectures/lecture25.pdf)
 - Debevec et al., "Acquiring the reflectance field of a human face."  SIGGRAPH 2000.
 - Sen et al., "Dual photography." SIGGRAPH 2005.
 - Schechner et al., "A theory of multiplexed illumination." ICCV 2003.
