@@ -55,6 +55,10 @@ You can [download the measured data from here](https://drive.google.com/drive/fo
 #### Programs
 - `01_calculate_light_transport.py`: Calculate the light transport matrix from measured data.
 - `02_relighting.py`: Relighting with the light transport matrix.
+- `03_visualize.py`: Visualize the distribution from light sources at specific camera pixel.
+
+Screen shot of `03_visualize.py`.
+![](documents/screenshot_visualize.jpg)
 
 ## References
 - [Light transport matrices (Computational Photography, CMU)](http://graphics.cs.cmu.edu/courses/15-463/2020_fall/lectures/lecture25.pdf)
