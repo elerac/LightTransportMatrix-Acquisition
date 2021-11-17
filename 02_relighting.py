@@ -3,7 +3,6 @@
 import numpy as np
 import cv2
 from skimage.exposure import adjust_gamma
-import structuredlight as sl
 
 def main():
     # Image size captured by camera
